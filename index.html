@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">🎬 MovieFinder</h1>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="favorites.html" class="nav-link">Favorites</a>
+            </div>
+            <button class="dark-mode-toggle" id="darkModeToggle">🌙</button>
+        </div>
+    </nav>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container">
+            <h2>Discover Your Favorite Movies</h2>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Enter movie title...">
+                <button id="searchButton">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading Animation -->
+    <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+        <p>Searching for movies...</p>
+    </div>
+
+    <!-- Error Message -->
+    <div id="errorMessage" class="error-message hidden"></div>
+
+    <!-- Results Section -->
+    <section class="results-section">
+        <div class="container">
+            <div id="resultsContainer" class="movies-grid"></div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
